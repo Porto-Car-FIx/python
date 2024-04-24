@@ -17,17 +17,19 @@ if intecao == "1":
         print("Crie sua conta aqui")
         email = str(input("Digite seu email: "))
         senha = str(input("Digite sua senha: "))
-        print(f"O email cadastrado foi {email}")
+    print(f"O email cadastrado foi {email}")
 elif intecao == "2":
     planos = str(input("Quer visualizar todos nossos planos ? \n"))
     while planos != "sim" and planos != "não":
          planos = str(input("Quer visualizar todos nossos planos ? \n"))
     if planos == "sim":
         print("Temos o planos de: Cobertura Total, que concede acesso a todos serviços dentro do nosso site \nCobertura Parcial, que vai de acordo com a sua região, automovel, e equipamento\nCobertura Mecânica, nesse plano tera acesso apenas acesso a analise de um mecanico ")
+    else:
+        print("para vizualiar seus planos faça cadastro")
 elif intecao == 3:
-    duvida = str(input("digite sua duvida, referente ao auto atendimento, a resposta pode ser rapida ou levar horas "))
+    duvida = str(input("digite sua duvida, referente ao auto atendimento, a resposta pode ser rapida ou levar horas: "))
 
 else:
-    feedback = str(input("Digite aqui seu feedback para que possamos melhorar nosso serviço e oferecer uma melhor entrega de resultados"))
+    feedback = str(input("Digite aqui seu feedback para que possamos melhorar nosso serviço e oferecer uma melhor entrega de resultados: "))
 
 
