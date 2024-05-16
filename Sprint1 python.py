@@ -59,16 +59,20 @@ def planos():
             print("Temos o planos de: Cobertura Total, que concede acesso a todos serviços dentro do nosso site \nCobertura Parcial, que vai de acordo com a sua região, automovel, e equipamento\nCobertura Mecânica, nesse plano tera acesso apenas acesso a analise de um mecanico ")
         else:
             print("para vizualiar seus planos faça cadastro")
+            
+        break
 
 #função caso o usuario escolha mandar uma duvida para a central de atendimento
 def duvida():
     while True:
         duvidas = str(input("digite sua duvida, referente ao auto atendimento, a resposta pode ser rapida ou levar horas: "))
+        break
 
 #função caso o usuario queira dar um feedback para a empresa
 def feedback():
     while True:
         feedbacks = str(input("Digite aqui seu feedback para que podemos melhorar nosso serviço e oferecer uma melhor entrega de resultados: "))
+        break
 
 while True:
 
