@@ -44,6 +44,8 @@ def cadastro():
 
             print(f"O email cadastrado foi {emails}")
 
+            break
+
 ##função para alterar alguma informação cadastrada
 def mudarInfor ():
     print("Escolha a informação que deseja alterar:")
@@ -57,8 +59,19 @@ def planos():
             planos = str(input("Quer visualizar todos nossos planos ? \n"))
         if planos == "sim":
             print("Temos o planos de: Cobertura Total, que concede acesso a todos serviços dentro do nosso site \nCobertura Parcial, que vai de acordo com a sua região, automovel, e equipamento\nCobertura Mecânica, nesse plano tera acesso apenas acesso a analise de um mecanico ")
+
+            detalhesPlanos = str(input("Deseja ver com mais detalhe algum plano ?\nSe quiser ver o plano de Cobertura Total digite '1'\nSe quiser ver o plano Cobertura Parcial digite '2'\n Se quiser ver o plano Cobertura Mecânica digite '3'"))
+            match detalhesPlanos:
+                case "1":
+                    print("Neste plano sera possivel ter acesso a todas funções dentro do nosso sistema, como uso completo da nossa IA capaz de analisar os dados que o usuario digitar e sugerir alguns possiveis problemas e quais seriam as possiveis soluções, neste plano tambem esta incluso o  uso de mecanicas parceiras ao nosso sistema, sera disponibilizado uma inteligencia artificial que ira dar a devida atenção ao cliente ")
+                case "2":
+                    
+
         else:
             print("para vizualiar seus planos faça cadastro")
+        
+
+
             
         break
 
@@ -75,11 +88,12 @@ def feedback():
         break
 
 while True:
-
+    #variavel para saber o que o usuario quer fazer dentro do menu 
     intencao = str(input("O que deseja fazer ? \n Você pode acessar seu perfil digitando '1' \n Você pode ver as opções de planos disponiveis e quais você tem acesso digitando '2' \n Alguma duvida digite '3'\n Caso queira dar um feedback digite '4' \n "))
-    
-    while intencao != "1" and intencao != "2" and intencao != "3" and intencao != "4":
+
     #laço de repetiçao para caso o usuario insira uma opção não cadastrada
+    while intencao != "1" and intencao != "2" and intencao != "3" and intencao != "4":
+    
         intencao  = str(input("Aqui temos algumas opções possiveis dentro do nosso site\n Você pode acessar seu perfil digitando '1', caso queira mudar alguma informção de cadastro digite 'alterar'\n Você pode ver as opções de planos disponiveis e quais você  tem acesso digitando '2'\n Alguma duvida digite '3'\n Caso queira dar um feedback digite '4' \n "))
     match intencao:
         case "1":cadastro()
