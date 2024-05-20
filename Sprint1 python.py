@@ -32,6 +32,7 @@ def cadastro():
                 senha = str(input("Digite sua senha:\n"))
                 confirmSenha = (str(input("Confirme sua senha:\n")))
             print("Seu cadastro foi realizado com sucesso!")
+            
             cadastrarVeiculo = str(input("Deseja cadastrar algum veiculo ?"))
             match cadastrarVeiculo:
                 case "sim":
@@ -65,8 +66,9 @@ def planos():
                 case "1":
                     print("Neste plano sera possivel ter acesso a todas funções dentro do nosso sistema, como uso completo da nossa IA capaz de analisar os dados que o usuario digitar e sugerir alguns possiveis problemas e quais seriam as possiveis soluções, neste plano tambem esta incluso o  uso de mecanicas parceiras ao nosso sistema, sera disponibilizado uma inteligencia artificial que ira dar a devida atenção ao cliente ")
                 case "2":
-                    
-
+                    print("Neste plano você vai ter acesso ao nosso chat-bot, que tem a função de te ajudar a auto-diagnosticar os problemas do seu veiculo, passar uma media de preço para o conserto, mas não vai ter auxilio mecanico cobrado pelo plano!")
+                case "3":
+                    print("Neste plano você tera acesso aos mecanicos parceiros do nosso sistema e ter um desconto ou cobertura total do preço do seu problema")
         else:
             print("para vizualiar seus planos faça cadastro")
         
